@@ -1,0 +1,48 @@
+.header {
+  border-bottom: 1px solid #eee;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 1rem 1.2rem;
+}
+
+.profileArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profileArea > div {
+  /* margin: 0 1.5rem; */
+}
+
+.iconWrapper {
+  margin-right: 1.2rem;
+}
+
+.headerItem {
+  display: flex;
+}
+
+.headerItem span {
+  padding-right: 1.2rem;
+}
+
+.header select {
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.price {
+  color: var(--price-color);
+}
+
+@media screen and (min-width: 499px) {
+  .profileArea {
+    width: 35rem;
+  }
+}
