@@ -1,12 +1,4 @@
 import React from "react";
-import Header from "./components/Header/Header";
+import AppRouter from "./router";
 
-function App() {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
-}
-
-export default App;
+export default () => <AppRouter />;

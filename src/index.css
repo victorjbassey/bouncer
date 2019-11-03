@@ -1,3 +1,15 @@
+:root {
+  --primary-font: "Open Sans", sans-serif;
+  --color-accent-1: #33a0ff;
+  --color-accent-2: #c1c8ce;
+  --color-accent-3: #f6f7f8;
+  --color-accent-4: #ff6875;
+  --color-primary: #262626;
+  --color-secondary: #ff4252;
+  --color-tertiary: #8f65ff;
+  --rating-color: #ffc600;
+}
+
 *,
 *::before,
 *::after {
@@ -10,8 +22,17 @@ html {
   font-size: 62.5%; /* This makes 1rem = 10px */
 }
 
+html,
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--primary-font);
   line-height: 1.6;
+  color: var(--color-primary);
 }

@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid #eee;
+  margin-bottom: 3rem;
 }
 
 .headerContent {
@@ -9,14 +10,23 @@
   padding: 1rem 1.2rem;
 }
 
+.payCollect {
+  padding: 0.4rem 2rem;
+  border-radius: 1.5rem;
+  border: none;
+  background: #200098;
+  color: #fff;
+  cursor: pointer;
+}
+
+.payCollect:hover {
+  background: #25b6f2;
+}
+
 .profileArea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.profileArea > div {
-  /* margin: 0 1.5rem; */
 }
 
 .iconWrapper {
@@ -38,11 +48,42 @@
 }
 
 .price {
-  color: var(--price-color);
+  color: var(--color-accent-2);
+}
+
+.paymentModal {
+  display: inline-block;
+  position: fixed;
+  left: 37%;
+  top: 30%;
+  z-index: 500;
+  border-radius: 9px;
+}
+
+.payCollectWidget {
+  display: inline-block;
+  position: relative;
+  border-radius: 9px;
+}
+
+.close {
+  background: red;
+  font-size: 1.9rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  transform: translate(1.5rem, -1.5rem);
+  cursor: pointer;
+  z-index: 600;
 }
 
 @media screen and (min-width: 499px) {
   .profileArea {
-    width: 35rem;
+    width: 30rem;
   }
 }
