@@ -1,0 +1,22 @@
+.navToggle {
+  width: 40px;
+  /* height: 100%; */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* padding: 10px 0; */
+  cursor: pointer;
+}
+
+.navToggle div {
+  width: 90%;
+  height: 3px;
+  background-color: var(--color-primary);
+}
+
+@media (min-width: 500px) {
+  .navToggle {
+    display: none;
+  }
+}
