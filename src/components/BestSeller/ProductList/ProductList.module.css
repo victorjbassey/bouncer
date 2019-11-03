@@ -1,0 +1,117 @@
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.product {
+  border: 1px solid var(--color-accent-2);
+  /* width: 33rem; */
+  text-align: center;
+  position: relative;
+  padding: 3rem 1rem;
+}
+
+.tag {
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: var(--color-secondary);
+  padding: 0.3rem 0.6rem;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.cta {
+  display: none;
+}
+
+.cta div {
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid var(--color-accent-2);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.cta div:hover {
+  border: 2px solid var(--color-accent-1);
+}
+
+.cta img {
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.imageWrapper img {
+  width: 100%;
+}
+
+.product h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.prices {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.prices span {
+  padding: 0.8rem;
+}
+
+.prices span:nth-child(1) {
+  color: var(--color-secondary);
+}
+
+.prices span:nth-child(2) {
+  color: var(--color-accent-2);
+  text-decoration: line-through;
+}
+
+.rating {
+  --rating: 4.4;
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 2rem;
+  font-family: Times; /*make sure ★ appears correctly*/
+  line-height: 1;
+}
+
+.rating::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--rating-color) var(--percent),
+    var(--color-accent-2) var(--percent)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product:hover .img {
+  opacity: 0.15;
+}
+
+.product:hover .cta {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+}
+
+@media screen and (min-width: 499px) {
+}

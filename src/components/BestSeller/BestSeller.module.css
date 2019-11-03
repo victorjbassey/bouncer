@@ -1,0 +1,49 @@
+.bestSeller {
+  margin-top: 6rem;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.listArea {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.list {
+  font-size: 1.7rem;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  max-width: 48rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.list li {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.list li:hover {
+  color: var(--color-accent-1);
+  border-bottom: 2px solid var(--color-accent-1);
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+
+  margin: 6rem 0;
+}
+
+.more span {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--color-accent-1);
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--color-accent-1);
+}
