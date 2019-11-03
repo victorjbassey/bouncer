@@ -1,0 +1,102 @@
+.bannerWrapper {
+  display: flex;
+  justify-content: center;
+  /* max-height: 28rem; */
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10rem;
+  overflow: hidden;
+  line-height: 1.2;
+  /* grid-template-rows: minmax(min-content, 28rem); */
+}
+
+.phoneArea,
+.oculusArea,
+.goPro {
+  padding: 0.7rem;
+}
+
+.phoneArea {
+  background-color: var(--color-accent-4);
+  color: #fff;
+  display: flex;
+}
+
+.oculusArea {
+  background-color: var(--color-accent-3);
+  display: flex;
+  flex-flow: column;
+}
+
+.oculusArea div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goPro {
+  background-color: var(--color-accent-2);
+  display: flex;
+}
+
+.goPro div:nth-child(2) {
+  align-self: center;
+}
+
+.imgContainer {
+  max-width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+.oculusArea img {
+  width: 50%;
+}
+
+@media screen and (min-width: 499px) {
+  .banner {
+    transform: translateY(-7rem);
+    max-width: 90rem;
+    grid-template-rows: 25rem;
+  }
+
+  .oculusArea img {
+    width: 100%;
+  }
+
+  .banner h3 {
+    font-size: 2.2rem;
+  }
+
+  .banner p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+  }
+
+  .phone {
+    /* width: 60rem; */
+    /* transform: translateX(4rem); */
+  }
+
+  .price {
+    font-size: 2.4rem;
+  }
+
+  .phoneArea,
+  .oculusArea,
+  .goPro {
+    padding: 2rem;
+  }
+
+  .goPro div:nth-child(2) {
+    transform: scale(1.8);
+  }
+}
