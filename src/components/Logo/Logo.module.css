@@ -1,0 +1,13 @@
+.logoWrapper {
+  width: 17rem;
+}
+
+.logoWrapper img {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .logoWrapper {
+    margin: 0 auto;
+  }
+}
